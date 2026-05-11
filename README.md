@@ -1,7 +1,10 @@
 # Sankey Generator
 
-这是一个基于 Streamlit、Pandas 和 Matplotlib 的桑基图生成工具。  
-程序可以从 Excel 表格读取数据，生成多列桑基图，并支持导出 PNG 和 PDF。
+Sankey Generator 是一款面向复杂 Excel 数据的可视化制图工具，
+支持多列桑基图自动构建、交互式参数调节、精细化样式控制与 PNG/PDF 高质量导出。
+项目围绕真实制图场景实现了节点/连线布局优化、标签避让、中英文字体分离、图例与模板复刻等功能，
+将原本依赖手工排版的桑基图制作流程转化为可配置、可复用、可交付的自动化工具。
+
 
 ## 功能特点
 
@@ -39,10 +42,6 @@ sankey_generator/
 建议使用 Python 3.9 或更高版本。
 
 先进入项目文件夹：
-
-```powershell
-cd "D:\python file\sankey_generator"
-```
 
 安装依赖：
 
@@ -99,22 +98,6 @@ JSON 配置可以保存当前图形的大部分参数，例如：
 
 这样在 Excel 数据不变的情况下，可以通过导入 JSON 配置复刻之前的图形效果。
 
-## 不建议上传的文件
-
-请不要把以下文件上传到 GitHub：
-
-```text
-客户真实 Excel 数据
-导出的 PNG 图片
-导出的 PDF 文件
-本地虚拟环境 venv/
-缓存文件 __pycache__/
-.env
-.streamlit/secrets.toml
-```
-
-这些文件已经建议写入 `.gitignore`。
-
 ## 依赖列表
 
 主要依赖包括：
@@ -144,7 +127,3 @@ requirements.txt
 - `sankey_core/layout.py`：节点和连线布局计算
 - `sankey_core/render.py`：Matplotlib 绘图和导出
 - `sankey_core/colors.py`：颜色处理逻辑
-
-## License
-
-如果需要开源，可以后续添加 License 文件。
