@@ -127,3 +127,8 @@ requirements.txt
 - `sankey_core/layout.py`：节点和连线布局计算
 - `sankey_core/render.py`：Matplotlib 绘图和导出
 - `sankey_core/colors.py`：颜色处理逻辑
+
+## License
+
+This project is licensed under the MIT License.
+
